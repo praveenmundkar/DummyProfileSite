@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    min-height: 10vh;
+    padding: 10px 100px;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+
+}
+.toggle-button{
+    position: absolute;
+    top: 26px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.bar{
+    height: 5px;
+    background-color: black;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+nav ul li a:hover{
+    background-color: rgb(221, 216, 216);
+}
+li{
+    display: inline-block;
+    padding: 15px;
+    font-weight: bolder;
+
+}
+/* body{
+    margin: auto;
+    max-width: fit-content;
+} */
+.photo img{
+    max-width: 275px;
+    border-style: solid;
+    border-radius: 140px;
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 15vw;
+    
+    /* flex-wrap: wrap-reverse; */
+}
+.content{
+    width: 50vw;
+    min-width: 360px;
+}
+
+.profile h1{
+     font-size: 3.2rem;
+    /* margin: 25px; */
+    padding: 20px;
+    padding-bottom: 0;
+}
+.profile p{
+    font-size: 1.2rem;
+        /* margin: 25px; */
+    padding: 20px;
+}
+.profile button{
+    margin-left: 20px;
+    padding: 10px 28px;
+    font-size: large;
+    border-radius: 7px;
+    border-style: none;
+}
+.resume{
+    background-color: #ff0000b8;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.recent_posts{
+    /* margin: 25px; */
+    background-color: #e4f0fa;
+    padding: 35px 15vw;
+}
+.rpt{
+    padding: 0 20px 20px 20px;
+    font-size: 17px;
+}
+.m20{
+    margin-right: 20px;
+}
+.rp{
+    display: flex;
+justify-content: space-between;
+padding: 0 20px 20px 20px;
+}
+.rp div{
+    max-width: 31vw;
+    padding: 25px;
+    background-color: white;
+}
+.rp div h3{
+   font-size: 2.2rem;
+}
+.date{
+    padding: 28px 0;
+    font-size: 1.3rem;
+}
+
+.rpc{
+    font-size: 1.2rem;
+}
+
+.featured{
+    padding: 35px 15vw;
+}
+.ft{
+    padding: 0 20px 20px 20px;
+    font-size: 17px;
+}
+.fw{
+    display: flex;
+    padding: 20px;
+}
+
+.imgfw img{
+    width: 230px;
+height: 190px;
+border-radius: 20px;
+}
+
+.fwcon{
+    padding: 0 25px;
+}
+.fwcon h4{
+    font-size: 2.3rem;
+}
+
+.year{
+    padding: 20px 0;
+    font-size: larger;
+color: #502f2f75;
+font-weight: bold;
+}
+.year span{
+    background-color: black;
+    color: white;
+    padding: 6px 16px;
+border-radius: 25px;
+font-weight: bolder;
+font-size: large;
+}
+hr{
+    margin: 0 20px;
+    color: #decbcb7d;
+}
+
+.links img{
+    height: 65px;
+}
+footer{
+    display: flex;
+flex-direction: column;
+padding: 70px;
+}
+footer div{
+    text-align: center;
+    font-weight: bold;
+}
+.fc{
+    font-size: 1.08rem;
+}
+
+@media (max-width:1200px) {
+    .profile{
+        padding: 35px 8vw;
+    }
+    nav{
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+    .featured{
+        padding: 35px 8vw;
+    }
+    .recent_posts{
+        padding: 35px 8vw;
+    }
+    html{
+        font-size: 14px;
+    }
+    .rp div{
+        max-width: 34vw;
+    }
+}
+@media (max-width:900px) {
+    .profile{
+        padding: 35px 2vw;
+    }
+    nav{
+        padding: 10px 10px;
+    }
+    .featured{
+        padding: 35px 2vw;
+    }
+    .recent_posts{
+        padding: 35px 2vw;
+    }
+    .rp div{
+        max-width: 38vw;
+    }
+}
+@media (max-width:729px) {
+    .profile{
+        flex-wrap: wrap-reverse;
+        text-align: center;
+    }
+    .photo{
+        min-width: 100vw;
+    }
+    .photo img{
+        max-width: 221px;
+    }
+    .rp{
+        flex-direction: column;
+    }
+    .rp div{
+        max-width: 90vw;
+    }
+    .fw{
+        flex-direction: column;
+    }
+    .profile h1{
+        font-size: 2.6rem;
+    }
+    .rpt{
+        text-align: center;
+    }
+    .m20{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .rp div h3 {
+        font-size: 2.1rem;
+      }
+      .content{
+          width:auto
+      }
+      .ft{
+          text-align: center;
+      }
+      .imgfw img {
+        width: 335px;
+        height: 230px;
+        border-radius: 15px;
+      }
+      .fwcon{
+          padding: 0;
+      }
+      .links img {
+        height: 50px;
+      }
+      .toggle-button{
+          display: flex;
+      }
+      .navlinks{
+          display:none ;
+          width: 100vw;
+          text-align: center;
+          padding-top: 50px;
+      }
+      nav ul li{
+          display: block;
+          padding: 0;
+      }
+      nav ul li a{
+          display: block;
+      }
+      .navlinks.active{
+          display :block
+      }
+}
